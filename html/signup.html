@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Collection | Registration</title>
+    <script src="../index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../logo/rc.jpg">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="video">
+            <video id="vid" src="../asset/videos/adv.mp4" muted autoplay loop></video>
+        </div>
+        <div id="formContainer">
+            <div id="rc">
+                <h1 id="hrc">Royal Collection</h1>&nbsp;<img src="../logo/shoelogodup.png" alt="">
+            </div>
+            <form action="">
+                <h1 id="heading">Registration Form</h1>
+                <input type="text" placeholder="First Name" required autofocus>
+                <input type="text" placeholder="Second Name" required>
+                <input type="email" placeholder="Email Id" required>
+                <input type="text" placeholder="Mobile Number" required>
+                <div id="input">
+                    <input id="pass" type="password" placeholder="Enter your password" required>
+                    <i class="fa-solid fa-eye-slash" id="eyeButton" onmousedown="passVis()" onmouseup="passInVis()"></i>
+                </div>
+
+                <div class="loc">
+                    <label for="location">Location : </label>&nbsp;
+                    <select id="location">
+                        <option value="KPHB">KPHB</option>
+                        <option value="Hi-tech City">Hi-tech City</option>
+                        <option value="Madhapur">Madhapur</option>
+                        <option value="Gachibowl">Gachibowl</option>
+                        <option value="Ameerpet">Ameerpet</option>
+                        <option value="Madhapur">Madhapur</option>
+                        <option value="Miyapur">Miyapur</option>
+                        <option value="Narayanaguda">Narayanaguda</option>
+                        <option value="Secunderabad">Secunderabad</option>
+                    </select>
+                </div>
+
+                <input type="text" placeholder="Pincode" required>
+                <button type="submit" value="SignUp">SignUp</button>
+                <a href="../index.html" title="Go Back"><i class="fa-solid fa-arrow-left"></i></a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
